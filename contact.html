@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="with=device-with, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">                
+    <link rel="stylesheet" href="Web.css">
+    <link rel="stylesheet" href="Fill-Expertise-Gap.png">
+    <link rel="icon" href="red1-fotor-bg-remover-20230614133716.png">
+    <link rel="stylesheet" href="close.png">
+    <link rel="stylesheet" href="menu.png">
+</head>
+<body>
+    <section class="sub-header3">
+
+        <nav>
+            <a class="TITLE" href="Web.html"><img src="red.png" />  </a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="icons" onclick="closeMenu()">  <img src="close.png" /> </i>
+                <ul>
+                    <li><a href="Web.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <i class="icons" onclick="openMenu()">  <img src="menu.png" /> </i>
+        </nav>
+
+        <div class="text-box">
+            <h1> Contact Us</h1>
+            
+        </div>
+        
+
+
+    </section>
+
+
+    <!-------------  contact us --------------->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020819.8906076415!2d43.35765950000002!3d42.32078445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x4f907964122d4ac2!2sGeorgia!5e0!3m2!1sen!2sge!4v1686055009142!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </section>
+
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i> <img src="home.png"</i>
+                    <span>
+                        <h5>Georgia</h5>
+                        <p>Tbilisi</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i> <img src="old-typical-phone.png"</i>
+                    <span>
+                        <h5>+995 0322 000 000</h5>
+                        <p>Mondey to Friday, 10AM to 6PM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i> <img src="email.png"</i>
+                    <span>
+                        <h5>infoeideas@gmail.com</h5>
+                        <p>Email us any qustions, anytime.</p>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="contact-col">
+
+                <form action="Form.php" method="post">
+                    <input type="text" name="name" placeholder="Entetr Your Name" required />
+                    <input type="email" name="email" placeholder="Entetr Your Email Address" required />
+                    <input type="text" name="subject" placeholder="Entetr Your Subject" required />
+                    <textarea rows="8" name="message" placeholder="Message" recuered></textarea>
+                    <button type="submit" class="btn2">Send Message</button>
+                </form>
+
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    
+    <!------------  footer   -------------------->
+
+    <section class="footer">
+
+        <h4>Where Are we?</h4>
+        <p>Anyone can contact us, from anywhere in the world. Also check the networks below. </p>
+        <div class="netIcons">
+
+            <a href="https://www.facebook.com/profile.php?id=100093144684579"> <i><img src="facebook.png"</i> </a>
+            <a href="Web.html"> <i><img src="click.png"</i> </a>
+            <a href="https://www.linkedin.com/company/%E2%82%91ideas/"> <i><img src="linkedin.png"</i> </a>
+
+
+        </div>
+
+
+        <p> Made By <a href="Web.html"> <sup>&exponentiale;</sup>1deas </a> </p>
+
+
+    </section>
+
+    <!----------------   javascript part for Menu   -------------------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function openMenu() {
+            navLinks.style.right = "0";
+        }
+        function closeMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,595 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+h1 {
+    
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    
+
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.30),rgba(0, 0, 0, 0.30)), url(pexels-nic-wood-6432056.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    height: 40px;  
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background: whitesmoke;
+    
+}
+
+.TITLE {
+    float: left;
+    display: block;
+    margin-top: 15 px;
+}
+
+.TITLE img {
+    inline-size: 170px;
+
+    
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+    margin-top: 20px;
+    
+  
+}
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;   
+
+        padding: 10px 15px;
+        position: relative;
+    }
+        .nav-links ul li a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            color: #ED2A2A;
+        }
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: darkred;
+            display: block;
+            margin: auto;
+            margin-top: 7px;
+            transition: 0.6s;
+        }
+    .nav-links ul li:hover::after {
+        width: 100%;
+    }
+
+.text-box {
+    width: 90%;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+    .text-box h1 {
+        font-size: 30px;
+        font-weight: 900;
+        color: whitesmoke;
+       
+    }
+        .text-box p {
+            margin: 15px 0px 40px;
+            font-size: 15px;
+            
+            color: whitesmoke;
+            font-weight:900;
+        }
+
+.btn {
+    display: inline-block;
+    top: 150px;
+    text-decoration: none;
+    font-weight: 600;
+    color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+    .btn:hover {
+        border: 2px solid black;
+        background: #ED2A2A;
+        color: whitesmoke;
+        transition: 0.9s;
+    }
+   nav .icons{
+       display: none;
+   }
+   
+   
+    @media (max-width: 700px) {
+        .text-box h1 {
+            font-size: 20px;
+          
+        }
+
+        .TITLE img {
+            inline-size: 130px;
+            
+        }
+
+        .nav-links ul li {
+            display: block;
+        }
+
+        .nav-links {
+            position: fixed;
+            background: whitesmoke;
+            height: 100vh;
+            width: 200px;
+            top: -20px;
+            right: -200px;
+            text-align: left;
+            z-index: 2;
+            transition: 0.8s;
+        }
+
+        .text-box p {
+            margin: 10px 0px 20px;
+            font-size: 10px;
+            
+        }
+        nav .icons {
+            display: block;
+            margin: 10px;
+            font-size: 22px;
+            cursor: pointer;
+
+        }
+
+       .nav-links ul {
+           padding: 30px;
+       }
+    }
+
+/*---------- services ---------*/
+.services {
+    background-color: #F2F2F2;
+    width: 100%;
+    min-height: 70vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.services a {
+    text-decoration: none;
+    
+}
+
+  
+p {
+    color: grey;
+    font-size: 15px;
+    font-weight:600;
+    line-height: 20px;
+    padding: 14px;
+}
+.row {
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-around;
+}
+.services-list{
+    flex-basis: 20%;
+    background: white;
+    border-radius: 20px;
+    margin-bottom:4%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    transition: 0.6s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 700;  
+    margin: 10px;
+}
+
+
+.services-list:hover {
+    box-shadow: 0 0 30px 0 #ED2A2A;
+}
+
+
+.services-list2 {
+    flex-basis: 90%;
+    background: white;
+    border-radius: 20px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    text-align: left;
+    transition: 0.6s;
+}
+.services-list2:hover {
+    box-shadow: 0 0 30px 0 #ED2A2A;
+}
+
+.services-list2 h3 {
+    text-align: left;
+
+
+    }
+
+    @media (max-width:700px) {
+        .row{
+        flex-direction:column;
+    }
+}
+
+
+/*--------------    Devices    ---------------*/
+
+.devices {
+    background-color: whitesmoke;
+    width: 100%;
+    min-height: 70vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+   
+
+    .device-list {
+        
+        flex-basis: 20%;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+    .device-list h2{
+        margin-top: 30px;
+        color: whitesmoke;
+        
+    }
+
+        .device-list img {
+            width: 100%;
+            height: 100%;
+            
+        }
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.7s;
+    font-weight: 800;
+}
+
+    .layer:hover {
+        background: linear-gradient(rgb(86, 7, 7, 0.40),rgba(86, 7, 7, 0.40));
+    }
+
+
+.layer h2 {
+
+         width: 100%;
+         font-weight: 500;
+         font-size: 25px;
+         bottom: 0;
+         left: 50%;
+         transform: translateX(-50%);
+         position: absolute;
+         opacity: 0;
+         transition: 0.6s;
+    }
+
+    .layer:hover h2{
+        bottom:45%;
+        opacity: 1;
+    }
+       
+
+    /*---------------   TEAM   ---------------------*/
+
+
+.Team {
+    width: 100%;
+    min-height: 70vh;
+    background-color: #F2F2F2;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+
+
+
+.teamMembers {
+    padding-top: 50px;
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding-left: 30px;
+}
+
+
+
+    .teamMembers img {
+        width: 85%;
+        height: 75%;
+        border-radius: 15px;
+        transition: 0.5s;
+    }
+    .teamMembers img:hover {
+        box-shadow: 0 0 30px 0 rgb(128, 128, 128);
+    }
+
+.teamMembers p{
+    padding: 0;
+}
+
+.teamMembers h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*--------------- Trusted By ----------*/
+
+.trustedBy {
+    width: 100%;
+    min-height: 70vh;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.listOfLogos img {
+    width: 30%;
+    height: 50%;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*-----------------  footer  ---------------------*/
+
+.footer {
+    width:100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+
+.footer h4 {
+    
+    margin-top: 20px;
+    font-weight: 600;
+    color: grey;
+}
+.footer a {
+    text-decoration:none;
+
+}
+
+.netIcons img{
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+
+}
+
+/* ---------------- SERVICES --------------------*/
+
+
+
+.sub-header {
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(86, 7, 7, 0.40),rgba(86, 7, 7, 0.40)), url(5-Valuable-Technology-Integration-Tips-for-Businesses-in-2021-Featured-Image.jpg);
+    background-position: top;
+    background-size: cover;
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+
+
+/* ---------------- About Us --------------------*/
+
+.sub-header1 {
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(86, 7, 7, 0.40),rgba(86, 7, 7, 0.40)), url(pexels-sergei-starostin-6636500.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+
+.about-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
+}
+
+.about-col {
+    flex-basis: 50%;
+    padding: 30px 2px;
+
+}
+.about-col img{
+    width: 100%;
+}
+
+.about-col h1{
+    padding-top: 25px;
+    padding-left: 8px;
+
+}
+
+
+.short-info {
+    text-align: left;
+    margin-top: 60px;
+    height: 50%;
+}
+.short-info h2{
+text-align: center;
+
+}
+.member-col {
+    flex-basis: 50%;
+    padding: 30px 2px;
+}
+    .member-col img {
+        width: 70%;
+        border-radius: 20px;
+        
+    }
+
+
+
+   
+
+/*---------------- Blog ----------------*/
+
+
+
+
+.sub-header2 {
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(86, 7, 7, 0.40),rgba(86, 7, 7, 0.40)), url(headers_akashic.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.Publications {
+    text-align: center;
+    margin-top: 100px;
+}
+    .Publications h4 {
+        text-align: center;
+        margin-top:50px;
+    }
+
+
+/*------------------ contact us ----------------*/
+
+
+
+.sub-header3 {
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(86, 7, 7, 0.40),rgba(86, 7, 7, 0.40)), url(Contact-Us.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+.location{
+    width: 90%;
+    margin: auto;
+    padding: 80px 0;
+
+}
+
+.location iframe{
+    width:100%;
+}
+
+.contact-us {
+   width: 100%;
+   margin: auto;
+}
+
+.contact-col {
+    flex-basis: 60%;
+    margin-bottom: 50px;
+
+}
+
+.contact-col div i {
+    display: flex;
+    align-items: center;
+    margin:auto;
+    margin-left: 30px;
+   
+}
+
+    .contact-col div p{
+        padding: 10px;
+    }
+
+    .contact-col div h5 {
+        font-size: 17px;
+        margin-top: 10px;
+        color: #ED2A2A;
+        font-weight:400;
+    }
+
+    .contact-col input, .contact-col textarea {
+        width: 75%;
+        padding: 15px;
+        margin-bottom: 17px;
+        
+        outline: none;
+        border: 2px solid #ED2A2A;
+        border-radius: 5px;
+    }
+
+.btn2 {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid #ED2A2A;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+    .btn2:hover {
+        border: 2px solid #ED2A2A;
+        background: #ED2A2A;
+        transition: 0.6s;
+    }
